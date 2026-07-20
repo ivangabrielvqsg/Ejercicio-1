@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Ejercicio 1</title>
+</head>
+<body>
+    <h1>Formulario Validado:</h1>
+    <fieldset style="width: 300px;">
+        <form action="#" method="get">
+            <label>Nombre: </label>
+            <input type="text" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required><br><br>
+            
+            <label>Edad: </label>
+            <input type="number" name="edad" min="1" max="120" required><br><br>
+            
+            <label>Cédula:</label>
+            <input type="text" name="cedula" pattern="^[VE]-\d{5,9}$" required><br><br>
+            
+            <label>Correo: </label>
+            <input type="email" name="correo" required><br><br>
+            
+            <label>Teléfono:</label>
+            <input type="text" name="telefono" pattern="^(0412|0414|0424|0416|0426)-\d{7}$" required><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>

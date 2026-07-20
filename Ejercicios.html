@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos - Ejercicio 2</title>
+</head>
+<body>
+    <h1>Registro de Datos</h1>
+    <fieldset style="width: 500px;">
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Carolina" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required>
+            <label for="otro_edad">Otro Eje Edad:</label>
+            <input type="text" id="otro_edad" name="otro_edad" placeholder="Ej: 25 edad Mayor 1"><br><br>
+
+            <label for="fecha_nac">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac" min="1900-01-01" max="2026-12-31" required><br><br>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="Ej: V-152483" pattern="^[VE]-\d{5,9}\$" title="Formato: V-12345678 o E-9876543" required><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ej: 0424-4212345" pattern="^(0412|0414|0424|0416|0426)-\d{7}\$" title="Formato: 0412-1234567" required><br><br>
+            <p>Sexo:</p>
+            <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="femenino" checked> Femenino</label><br><br>
+
+            <p>Deportes:</p>
+            <label><input type="checkbox" name="deportes" value="futbol"> Fútbol</label>
+            <label><input type="checkbox" name="deportes" value="baloncesto"> Baloncesto</label>
+            <label><input type="checkbox" name="deportes" value="natacion"> Natación</label><br><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" required><br><br>
+
+            <label for="clave">Clave:</label>
+            <input type="password" id="clave" name="clave" placeholder="Ingrese su clave" required><br><br>
+
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color_favorito" value="#000000"><br><br>
+
+            <label for="ciudad">Selecciona tu ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="" disabled selected>-- Elige una opción --</option>
+                <option value="valencia">Valencia</option>
+                <option value="maracay">Maracay</option>
+                <option value="caracas">Caracas</option>
+            </select><br><br>
+            <hr>
+            
+            <input type="submit" value="Enviar Datos">
+            <input type="reset" value="Limpiar Formulario">
+
+        </form>
+    </fieldset>
+
+</body>
+</html>
